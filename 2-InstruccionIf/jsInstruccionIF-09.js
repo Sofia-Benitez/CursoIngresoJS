@@ -1,6 +1,13 @@
+/* Sofia Benitez
+Al presionar el Botón, mostrar un número Random del 1 al 10 inclusive
+*/
+
+
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");	
+	let random;
+	random=Math.floor(Math.random() * 11) + 1;
+
+	alert("Este es un numero random " + random);
 
 }//FIN DE LA FUNCIÓN
