@@ -16,7 +16,14 @@ function mostrar()
 	{
 		alert("Es muy pequeno para NO ser soltero");
 	}
-	
+/* es lo mismo que :
+if (edad < 18)
+{
+	if (estadoCivil !="Soltero")
+	{
+		alert("Es muy pequeno para NO ser soltero");
+	}
+}
 
-
+*/ 
 }//FIN DE LA FUNCIÓN

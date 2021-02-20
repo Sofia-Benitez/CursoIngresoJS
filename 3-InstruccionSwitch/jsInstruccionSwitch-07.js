@@ -1,6 +1,30 @@
+
+/*Sofia Benitez
+Al selecionar un destino ,
+ indicar el punto cardinal de nuestro pais en donde se encuentra Norte, Sur, Este u Oeste
+
+*/
 function mostrar()
 {
-	var destinoIngresado =txtIdDestino.value;
-	alert(destinoIngresado);
+	let destinoIngresado;
+	let mensaje;
 
-}//FIN DE LA FUNCIÓN
+	destinoIngresado=document.getElementById("txtIdDestino").value;
+
+	switch(destinoIngresado){
+		case "Cataratas":
+			mensaje="Norte";
+		break;
+		case "Bariloche":
+			mensaje="Oeste";
+		break;
+		case "Mar del plata":
+			mensaje="Este";
+		break;
+		default:
+			mensaje="Sur";
+	}
+
+	alert(mensaje);
+
+}//FIN DE LA FUNCIÓN 

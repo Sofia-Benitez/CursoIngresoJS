@@ -3,29 +3,34 @@ Al presionar el Botón, asignar una nota RANDOM al examen y mostrar:
 "EXCELENTE" para notas igual a 9 o 10,
 "APROBÓ" para notas mayores a 4,
 "Vamos, la proxima se puede" para notas menores a 4
+mostrar con un solo alert
 */
 
 
 function mostrar()
 {
-	let random;
+	let nota;
+	let mensaje;
 
-	random=Math.floor(Math.random() * 11);
+	nota=Math.floor(Math.random() * 10) +1;
 
-	if(random > 8)
+	if(nota > 8)
 	{
-		alert("Excelente " + random);
+		mensaje = "Excelente " + nota;
 	}
 	else
 	{
-		if(random > 4)
+		if(nota > 4)
 		{
-			alert("Aprobo " + random);
+			mensaje = "Aprobo " + nota;
 		}
 		else
 		{
-			alert("Vamos, la proxima se puede " + random);
+			mensaje = "Vamos, la proxima se puede " + nota;
 		}
 	}
+
+	alert(mensaje);
+
 
 }//FIN DE LA FUNCIÓN
